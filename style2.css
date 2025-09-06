@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  background: #6b7a8f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.header .logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+.biodata {
+  background: #fff0c0; 
+  padding: 30px;
+  text-align: center;
+}
+
+.sosmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px; 
+}
+
+.sosmed .box {
+  flex: 1; 
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 48px; 
+  color: white;
+}
+
+.kuning { background: yellow; color: black; }
+.coklat { background: brown; }
+.biru   { background: steelblue; }
+.hijau  { background: seagreen; }
+
+.sosmed .box:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  opacity: 0.9;
+}
+
+
+.cv {
+  background: lightblue;
+  padding: 40px;
+  text-align: center;
+  width: 1300px;
+  height: 1300px;
+}
+
+h2 {
+font-size: 30px;
+}
+
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 25px;
+      color: #34495e;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #555;
+    }
+
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: #2c3e50;
+    }
+
+/*.clear {
+clear: left;
+}*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/*.cf {
+    *zoom: 1;
+}
+
+
