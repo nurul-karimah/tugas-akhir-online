@@ -35,10 +35,54 @@ body {
 
 
 .biodata {
-  background: #fff0c0; 
+  display: flex;              /* aktifkan flex */
+  align-items: center;        /* vertikal tengah */
+  justify-content: center;    /* konten rata tengah */
+  background: #fff0c0;        /* cream */
   padding: 30px;
-  text-align: center;
+  text-align: left;           /* teks rata kiri */
+  gap: 30px;                  /* jarak antar elemen */
 }
+
+/* Gambar biodata */
+.biodata img {
+  width: 150px;
+  height: 210px;
+  border-radius: 0;        
+  object-fit: cover;          /* supaya foto tidak gepeng */
+  border: 3px solid #666;     /* garis tipis biar rapi */
+}
+
+/* Bagian teks biodata */
+.biodata .teks {
+  max-width: 600px;
+}
+
+.biodata .teks h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.biodata .teks p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  .biodata {
+    flex-direction: column;   /* gambar pindah ke atas */
+    text-align: center;
+  }
+  
+  .biodata img {
+    margin-bottom: 20px;
+  }
+}
+
 
 .sosmed {
   display: flex;
@@ -131,6 +175,13 @@ font-size: 30px;
 
     strong {
       color: #2c3e50;
+    }
+
+    #footer{
+    background-color:#b5b6d4;
+    padding:10px;
+    margin:1%;
+    text-align:center;
     }
 
 /*.clear {
