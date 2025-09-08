@@ -35,13 +35,13 @@ body {
 
 
 .biodata {
-  display: flex;              /* aktifkan flex */
-  align-items: center;        /* vertikal tengah */
-  justify-content: center;    /* konten rata tengah */
-  background: #fff0c0;        /* cream */
-  padding: 30px;
-  text-align: left;           /* teks rata kiri */
-  gap: 30px;                  /* jarak antar elemen */
+  display: flex;              
+  align-items: center;        
+  justify-content: center;    
+  background: #fff0c0;       
+  padding: 600px;
+  text-align: left;          
+  gap: 30px;                  
 }
 
 /* Gambar biodata */
@@ -49,8 +49,8 @@ body {
   width: 150px;
   height: 210px;
   border-radius: 0;        
-  object-fit: cover;          /* supaya foto tidak gepeng */
-  border: 3px solid #666;     /* garis tipis biar rapi */
+  object-fit: cover;         
+  border: 3px solid #666;     
 }
 
 /* Bagian teks biodata */
@@ -71,10 +71,10 @@ body {
   color: #444;
 }
 
-/* Responsive untuk HP */
+
 @media (max-width: 768px) {
   .biodata {
-    flex-direction: column;   /* gambar pindah ke atas */
+    flex-direction: column;  
     text-align: center;
   }
   
@@ -176,6 +176,50 @@ font-size: 30px;
     strong {
       color: #2c3e50;
     }
+/* Profil Section */
+.profil {
+  display: flex;
+  padding: 40px;
+  background-color: #eee;
+}
+
+.profil img {
+  width: 200px;
+  height: 200px;
+  background: #ccc;
+  margin-right: 30px;
+  object-fit: cover;
+}
+
+.profil-text h2 {
+  margin-bottom: 10px;
+}
+
+.profil-text p {
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+footer{
+    background-color:#b5b6d4;
+    padding:10px;
+    margin:0%;
+    text-align:center;
+  }
+    
+/* Kontak Section */
+.kontak {
+  padding: 10px 40px;
+}
+
+.kontak h3 {
+  margin-bottom: 10px;
+}
+
+.kontak p {
+  margin: 5px 0;
+}
+
 
     #footer{
     background-color:#b5b6d4;
